@@ -37,6 +37,7 @@ function JogoDaVelha() {
 
       [board[0], board[4], board[8]],
       [board[2], board[4], board[6]],  
+      [board[3], board[5], board[7]], 
     ];
 
     possibleWaysToWin.forEach(cells => {
@@ -50,11 +51,11 @@ function JogoDaVelha() {
 
   const checkDraw = () => {
     if (board.every(item => item !== "")) setWinner("E");
-      // empate! se todos forem diferentes de vazio
+      // Empate se todos forem diferentes de vazio
   }
 
 
-  useEffect(checkWinner, [board]); /* So ira passar uma função quando algo for alterado */
+  useEffect(checkWinner, [board]); // So ira passar uma função quando algo for alterado
   
   const resetGame = () => {
     setCurrentPlayer("O");
