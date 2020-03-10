@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './JogoDaVelha.css';
 
-/* Descrição: O jogo da velha foi criado com base em um video aula do Lucass Caton e 
-tem como objetivo treinar o uso em React, CSS e Js */
-
 function JogoDaVelha() {
   const emptyBoard = Array(9).fill("");
   const [board, setBoard] = useState(emptyBoard);
