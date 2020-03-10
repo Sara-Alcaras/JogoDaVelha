@@ -4,6 +4,3 @@ import JogoDaVelha from './JogoDaVelha';
 
 
 ReactDOM.render(<JogoDaVelha />, document.getElementById('root'));
-
-// Descrição: 
-
