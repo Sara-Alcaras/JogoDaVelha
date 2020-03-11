@@ -66,14 +66,15 @@ function JogoDaVelha() {
     setWinner(null);
   }
 
-   console.log("currentPlayer", currentPlayer)
-   
-   
+  
+  console.log("currentPlayer", currentPlayer)
+
   return (
     <main>
       <div className="NextPlayer">
         
-      {`Next Player:`}
+      {`Next Player: ${currentPlayer}`}
+
     
       </div>
       <h1 className="title"> Jogo da Velha</h1>
