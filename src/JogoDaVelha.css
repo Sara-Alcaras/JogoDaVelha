@@ -15,16 +15,31 @@ body {
   align-items: center;
   justify-content: center;
 
-  font-family: sans-serif;
+  font-family: grenze;
   height: 100vh;
   background-color: rgb(153, 153, 153);
 }
 
+.NextPlayer{
+  font-family: grenze;
+  font-weight: bold;
+
+  color: rgb(60, 62, 63);
+  border: 1px solid rgb(211, 223, 104);
+  border-radius: 4px;
+  box-shadow: 3px 5px 12px rgb(0, 0, 0);
+  position: absolute;
+  padding: 0 10px;
+  margin:  0 50px;
+  
+}
+
 .title {
   text-align: center;
-  font-size: 3rem;
-  color: #555;
-  margin-bottom: 2rem;
+  font-size: 3rem; 
+  color: rgb(60, 62, 63);
+  margin-bottom: 2rem; 
+  border: none;
 }
 
 .board {
@@ -32,6 +47,7 @@ body {
   grid-template-columns: repeat(3, 248px);
   grid-template-rows: repeat(3, 200px);
   gap: 1rem;
+  cursor: pointer;
 }
 .board.game-over{
   opacity: 0.10;
@@ -48,8 +64,6 @@ body {
   font-size: 3rem;
   font-weight: bold;
   color: #00000066;
-
-  cursor: pointer;
 }
 
 .cell:not(.O):not(.X):hover {
@@ -97,4 +111,5 @@ button {
   background-color: rgb(68, 255, 146);
   color: white;
   font-size: 1.2rem;
+  cursor: pointer;
 }
