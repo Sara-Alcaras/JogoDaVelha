@@ -70,6 +70,11 @@ function JogoDaVelha() {
 
   return (
     <main>
+      <div className="countPoints"> 
+      {`Jogador X:`}
+      
+      </div>
+
       <div className="NextPlayer"> 
       {`Next Player: ${currentPlayer}`}
 
