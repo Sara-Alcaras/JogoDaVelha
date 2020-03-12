@@ -30,10 +30,28 @@ body {
   box-shadow: 3px 5px 12px rgb(0, 0, 0);
   position: absolute;
   height: 40vwin;
-  left: 30%;
-  top: 90%;
+  left: 63%;
+  top: 16%;
   margin-left: -20vwin;
 }
+  
+  .player{
+    font-family: grenze;
+    font-weight: bold;
+  
+    color: rgb(60, 62, 63);
+    border: 1px solid rgb(211, 223, 104); 
+    border-radius: 4px;
+    box-shadow: 3px 5px 12px rgb(0, 0, 0);
+    position: absolute;
+    height: 40vwin;
+    left: 30%; 
+    top: 12%;
+    margin-left: -20vwin; 
+    width: 85px;
+    height: 60px;
+
+  }
 
 .title {
   text-align: center;

@@ -6,6 +6,8 @@ function JogoDaVelha() {
   const [board, setBoard] = useState(emptyBoard);
   const [currentPlayer, setCurrentPlayer] = useState("O");
   const [winner, setWinner] = useState(null);
+  const [countX, setCountX] = useState(0);
+  const [countO, setCountO] = useState(0);
 
   const handleCellClick = (index) => {
 
@@ -44,11 +46,16 @@ function JogoDaVelha() {
     ];
 
     possibleWaysToWin.forEach(cells => {
-      if (cells.every(cell => cell === "O")) setWinner("O");
+      if (cells.every(cell => cell === "O")) {
+        setCountO(countO+1)
+        setWinner("O")
+      };
 
-      if (cells.every(cell => cell === "X")) setWinner("X");
+      if (cells.every(cell => cell === "X")){
+        setCountX(countX+1)
+        setWinner("X");
+      }
     });
-
     checkDraw();
   }
 
@@ -66,15 +73,17 @@ function JogoDaVelha() {
     setWinner(null);
   }
 
+   console.log("winner", winner)
+
   // console.log("currentPlayer", currentPlayer)
 
   return (
     <main>
-      <div className="countPoints"> 
-      {`Jogador X:`}
-      
-      </div>
-
+      <div className="player"> 
+      {`Player X:${countX}`}
+      {`Player O: ${countO}`}
+    
+      </div> 
       <div className="NextPlayer"> 
       {`Next Player: ${currentPlayer}`}
 
