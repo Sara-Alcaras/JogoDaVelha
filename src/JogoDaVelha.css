@@ -20,54 +20,54 @@ body {
   background-color: rgb(153, 153, 153);
 }
 
-.NextPlayer{
-  font-family: grenze;
-  font-weight: bold;
-
+.nextPlayer{
   color: rgb(60, 62, 63);
-  border: 1px solid rgb(211, 223, 104);
-  border-radius: 4px;
-  box-shadow: 3px 5px 12px rgb(0, 0, 0);
-  position: absolute;
-  height: 40vwin;
-  left: 63%;
-  top: 16%;
-  margin-left: -20vwin;
-}
-  
-  .player{
-    font-family: grenze;
-    font-weight: bold;
-  
-    color: rgb(60, 62, 63);
-    border: 1px solid rgb(211, 223, 104); 
-    border-radius: 4px;
-    box-shadow: 3px 5px 12px rgb(0, 0, 0);
-    position: absolute;
-    height: 40vwin;
-    left: 30%; 
-    top: 12%;
-    margin-left: -20vwin; 
-    width: 85px;
-    height: 60px;
+  border: 1px solid rgb(211, 223, 104); 
+  box-shadow: 3px 5px 12px rgb(0, 0, 0); 
+} 
 
+.players {
+  color: rgb(60, 62, 63);
+  border: 1px solid rgb(211, 223, 104); 
+  box-shadow: 3px 5px 12px rgb(0, 0, 0);
+  height: 55px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-evenly;
   }
 
-.title {
-  text-align: center;
-  font-size: 3rem; 
-  color: rgb(60, 62, 63);
-  margin-bottom: 2rem; 
-  border: none;
+.player{
+  display: flex; 
+  } 
+
+.topo {
+  display: flex; 
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-evenly;
+  margin-bottom: 20px;  
+  }
+
+.topo .players, .topo .nextPlayer {
+  font-family: grenze;
+  font-weight: bold; 
+  border-radius: 4px;
 }
 
+.title {
+  font-size: 3rem; 
+  color: rgb(60, 62, 63);
+  margin-bottom: 0;
+} 
+
 .board {
-  display: grid;
+  display: grid; 
   grid-template-columns: repeat(3, 248px);
   grid-template-rows: repeat(3, 200px);
   gap: 1rem;
   cursor: pointer;
 }
+
 .board.game-over{
   opacity: 0.10;
 }

@@ -78,18 +78,29 @@ function JogoDaVelha() {
   // console.log("currentPlayer", currentPlayer)
 
   return (
-    <main>
-      <div className="player"> 
-      {`Player X:${countX}`}
-      {`Player O: ${countO}`}
-    
-      </div> 
-      <div className="NextPlayer"> 
-      {`Next Player: ${currentPlayer}`}
+    <main> 
+      <div className="topo">
+        <div className="players">
+
+          <div className="player">
+            <div>{`Player X:`} </div>
+            <div> {`${countX}`} </div>
+          </div>
+
+          <div className="player">
+            <div>{`Player O:`} </div>
+            <div> {`${countO}`} </div>
+          </div>
+
+        </div>
+        <h1 className="title"> Jogo da Velha</h1>
+
+        <div className="nextPlayer">
+        {`Next Player: ${currentPlayer}`}
+        </div>
 
       </div>
-      <h1 className="title"> Jogo da Velha</h1>
-
+    
       <div className={`board ${winner ? "game-over" : ""}`}>
         {board.map((item, index) => (
           <div
