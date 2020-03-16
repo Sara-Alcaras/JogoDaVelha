@@ -160,3 +160,17 @@ button {
   } 
 }
 
+/*@media only screen and (max-width: 767px) and (orientation:landscape) {
+  body {
+    width: 100%;
+    text-align: justify;
+    padding: 15%;
+    display: table
+   
+  }
+
+  main {
+    font-size: 1.5rem;
+  } 
+} */
+
