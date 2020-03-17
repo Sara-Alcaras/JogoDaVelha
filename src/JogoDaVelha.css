@@ -148,19 +148,20 @@ button {
 
 @media only screen and (max-width: 767px) and (orientation:landscape) {
   body {
+    page-break-before: right;
+    display: table;
     width: 100%;
-    text-align: justify;
-    padding: 15%;
-    display: table
-   
+    padding: 30%;
+    margin-top: 40px;
+      
   }
 
   main {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   } 
 }
 
-/*@media only screen and (max-width: 767px) and (orientation:landscape) {
+/*@media only screen and (min-width: 991px) and (max-width: 1200px) {
   body {
     width: 100%;
     text-align: justify;
