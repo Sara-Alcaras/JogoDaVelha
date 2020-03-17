@@ -139,7 +139,7 @@ button {
     width: 100%; 
     text-align: justify;
     padding: 30%;
-    display: table 
+    display: table;
   }
   main {
     font-size: 1.5rem;
@@ -151,14 +151,37 @@ button {
     page-break-before: right;
     display: table;
     width: 100%;
-    padding: 30%;
-    margin-top: 40px;
-      
+    padding: 45%;
   }
 
-  main {
-    font-size: 1.3rem;
+  div {
+    font-size: 1rem;
   } 
+
+  footer {
+    font-size: 1rem;
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-evenly;
+    margin-bottom: 45px;  
+  
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .cell {
+    border-radius: 3px;
+    font-size: 1rem;
+  }
+
+  .board {
+    grid-template-columns: repeat(3, 148px);
+    grid-template-rows: repeat(3, 100px);
+  }
+
 }
 
 /*@media only screen and (min-width: 991px) and (max-width: 1200px) {
