@@ -151,12 +151,8 @@ button {
     page-break-before: right;
     display: table;
     width: 100%;
-    padding: 45%;
+    padding: 40%;
   }
-
-  div {
-    font-size: 1rem;
-  } 
 
   footer {
     font-size: 1rem;
@@ -165,7 +161,10 @@ button {
     align-items: center; 
     justify-content: space-evenly;
     margin-bottom: 45px;  
-  
+  }
+
+  button {
+    font-size: 1rem;
   }
 
   .title {
@@ -184,17 +183,11 @@ button {
 
 }
 
-/*@media only screen and (min-width: 991px) and (max-width: 1200px) {
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
   body {
     width: 100%;
     text-align: justify;
-    padding: 15%;
-    display: table
-   
   }
 
-  main {
-    font-size: 1.5rem;
-  } 
-} */
+} 
 
