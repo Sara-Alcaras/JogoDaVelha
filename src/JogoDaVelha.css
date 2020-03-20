@@ -62,8 +62,8 @@ body {
 
 .board {
   display: grid; 
-  grid-template-columns: repeat(3, 248px);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 178px);
+  grid-template-rows: repeat(3, 130px);
   gap: 1rem;
   cursor: pointer;
 }
@@ -79,8 +79,8 @@ body {
 
 
   background-color: white;
-  border-radius: 5px;
-  font-size: 3rem;
+  border-radius: 4px;
+  font-size: 2rem;
   font-weight: bold;
   color: #00000066;
 }
@@ -103,11 +103,11 @@ body {
 
 footer{
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .winner-message{
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .winner-message span.O{
@@ -144,6 +144,9 @@ button {
   main {
     font-size: 1.5rem;
   }  
+
+
+
 } 
 
 @media only screen and (max-width: 767px) and (orientation:landscape) {
