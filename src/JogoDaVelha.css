@@ -138,40 +138,16 @@ button {
   body {
     width: 100%; 
     text-align: justify;
-    padding: 30%;
-    display: table;
-  }
-  main {
-    font-size: 1.5rem;
-  }  
-
-
-
-} 
-
-@media only screen and (max-width: 767px) and (orientation:landscape) {
-  body {
-    page-break-before: right;
-    display: table;
-    width: 100%;
-    padding: 40%;
   }
 
-  footer {
-    font-size: 1rem;
-    display: flex; 
-    flex-direction: row;
-    align-items: center; 
-    justify-content: space-evenly;
-    margin-bottom: 45px;  
+   .board{
+    grid-template-columns: repeat(3, 88px);
+    grid-template-rows: repeat(3, 80px);
+
   }
 
-  button {
-    font-size: 1rem;
-  }
-
-  .title {
-    font-size: 2rem;
+   button {
+    font-size: 10px;
   }
 
   .cell {
@@ -179,10 +155,85 @@ button {
     font-size: 1rem;
   }
 
-  .board {
-    grid-template-columns: repeat(3, 148px);
-    grid-template-rows: repeat(3, 100px);
+  footer {
+    font-size: 13px;   
   }
+
+  .title {
+    font-size: 1.5rem;
+    padding: 0.6em;
+    transform: translateY(80%);
+  }
+
+  .topo{
+    flex-direction: column;
+  } 
+
+  .players {
+    height: 65px;
+    width: 95px; 
+    align-items: center; 
+  }
+
+  .nextPlayer{
+    text-align: center; 
+    height: 22px;
+    width: 118px; 
+    transform: translateY(-150%);
+  }
+  
+} 
+
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+  body {
+    width: 100%;
+    padding: 10%;
+  }
+
+  .board {
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 80px);
+  }
+
+  footer {
+    font-size: 0.9rem;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  button {
+    font-size: 0.6rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+   
+  }
+
+  .players{
+    height: 60px;
+    width: 90px; 
+    align-items: center; 
+    font-size: 0.9rem;
+
+  }
+
+  .nextPlayer{
+    text-align: center; 
+    height: 22px;
+    width: 118px; 
+    font-size: 0.9rem;
+
+  }
+
+  .cell {
+    border-radius: 3px;
+    font-size: 1rem;
+  }
+
+ 
 
 }
 
