@@ -187,16 +187,18 @@ button {
 @media only screen and (max-width: 767px) and (orientation:landscape) {
   body {
     width: 100%;
-    padding: 10%;
+    text-align: justify;
+
   }
 
   .board {
-    grid-template-columns: repeat(3, 90px);
-    grid-template-rows: repeat(3, 80px);
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+
   }
 
   footer {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: flex; 
     flex-direction: row;
     align-items: center;
@@ -204,36 +206,35 @@ button {
   }
 
   button {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
+    
    
   }
 
   .players{
-    height: 60px;
-    width: 90px; 
+    height: 30px;
+    width: 50px; 
     align-items: center; 
-    font-size: 0.9rem;
+    font-size: 0.5rem;
 
   }
 
   .nextPlayer{
     text-align: center; 
-    height: 22px;
-    width: 118px; 
-    font-size: 0.9rem;
+    height: 14px;
+    width: 60px; 
+    font-size: 0.5rem;
 
   }
 
   .cell {
     border-radius: 3px;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
-
- 
 
 }
 
