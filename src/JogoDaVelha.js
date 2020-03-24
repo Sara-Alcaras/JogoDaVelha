@@ -73,7 +73,7 @@ function JogoDaVelha() {
     setWinner(null);
   }
 
-   console.log("winner", winner)
+   //console.log("winner", winner)
 
   // console.log("currentPlayer", currentPlayer)
 
