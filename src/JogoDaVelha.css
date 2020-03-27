@@ -164,6 +164,7 @@ button {
 
   .title {
     font-size: 1.5rem;
+    display: none;
     padding: 0.6em;
    /* transform: translateY(80%); */
   }
