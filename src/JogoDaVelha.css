@@ -60,6 +60,10 @@ body {
   margin-bottom: 0;
 } 
 
+.title2 {
+  display: none;
+} 
+
 .board {
   display: grid; 
   grid-template-columns: repeat(3, 178px);
@@ -161,9 +165,17 @@ button {
   .title {
     font-size: 1.5rem;
     padding: 0.6em;
-    transform: translateY(80%);
+   /* transform: translateY(80%); */
   }
 
+  .title2 {
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0.6em;
+    color: rgb(60, 62, 63); 
+  }
+
+  
   .topo{
     flex-direction: column;
   } 
@@ -178,7 +190,7 @@ button {
     text-align: center; 
     height: 22px;
     width: 118px; 
-    transform: translateY(-150%);
+   /* transform: translateY(-150%); */
   }
   
 } 
@@ -209,8 +221,9 @@ button {
 
   .title {
     font-size: 0.8rem;
+  
   }
-
+  
   .players{
     height: 30px;
     width: 50px; 
@@ -223,6 +236,7 @@ button {
     height: 14px;
     width: 60px; 
     font-size: 0.5rem;
+    
   }
 
   .cell {
