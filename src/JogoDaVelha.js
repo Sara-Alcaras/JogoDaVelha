@@ -8,18 +8,14 @@ function JogoDaVelha() {
   const [winner, setWinner] = useState(null);
   const [countX, setCountX] = useState(0);
   const [countO, setCountO] = useState(0);
-
   const handleCellClick = (index) => {
 
-    if (winner) {
-      console.log("Game finalized");
-      return null;
-    }
-
-    if (board[index] !== "") {
-      console.log("Busy Position");
-      return null;
-    }
+    if (winner) return null;
+    //console.log("Game finalized");
+    
+    if (board[index] !== "") return null;
+    //console.log("Busy Position");
+    
 
     setBoard(
       board.map((item, itemIndex) => itemIndex === index ? currentPlayer : item)
@@ -41,27 +37,33 @@ function JogoDaVelha() {
 
       [board[0], board[4], board[8]],
       [board[2], board[4], board[6]],
-      [board[3], board[5], board[7]],
-      [board[7], board[8], board[9]]
+      [board[2], board[5], board[8]],
     ];
-
-    possibleWaysToWin.forEach(cells => {
+ 
+    let someoneWon = false
+      possibleWaysToWin.forEach(cells => {
       if (cells.every(cell => cell === "O")) {
         setCountO(countO+1)
         setWinner("O")
+        someoneWon = true;
       };
 
       if (cells.every(cell => cell === "X")){
         setCountX(countX+1)
         setWinner("X");
+        someoneWon = true;
       }
     });
-    checkDraw();
+
+    if(!someoneWon){
+      checkDraw();
+    }
   }
 
   const checkDraw = () => {
+    
     if (board.every(item => item !== "")) setWinner("E");
-    // Empate se todos forem diferentes de vazio
+    // Empate se todos forem diferentes de vazio 
   }
 
 
@@ -94,12 +96,12 @@ function JogoDaVelha() {
 
         </div>
         <h1 className="title"> Jogo da Velha</h1>
-    
+
         <div className="nextPlayer">
         {`Next Player: ${currentPlayer}`}
         </div>
 
-        <h1 className="title-mobile"> Jogo da Velha</h1>
+        <h1 className="title-mobile"> Jogo da Velha </h1>
 
       </div>
     
