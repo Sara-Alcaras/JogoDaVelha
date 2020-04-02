@@ -16,8 +16,9 @@ body {
   justify-content: center;
 
   font-family: grenze;
-  height: 100vh;
   background-color: rgb(153, 153, 153);
+  padding-top: 25px;
+  height:60%;
 }
 
 .nextPlayer{
@@ -60,12 +61,15 @@ body {
   margin-bottom: 0;
 } 
 
+.title-mobile {
+  display: none;
+} 
+
 .board {
   display: grid; 
-  grid-template-columns: repeat(3, 248px);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 178px);
+  grid-template-rows: repeat(3, 130px);
   gap: 1rem;
-  cursor: pointer;
 }
 
 .board.game-over{
@@ -79,10 +83,11 @@ body {
 
 
   background-color: white;
-  border-radius: 5px;
-  font-size: 3rem;
+  border-radius: 4px;
+  font-size: 2rem;
   font-weight: bold;
   color: #00000066;
+  cursor: pointer;
 }
 
 .cell:not(.O):not(.X):hover {
@@ -103,11 +108,11 @@ body {
 
 footer{
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .winner-message{
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .winner-message span.O{
@@ -135,28 +140,113 @@ button {
 
 
 @media only screen and (max-width: 767px) and (orientation:portrait) {
-  body {
-    width: 100%; 
-    text-align: justify;
-    padding: 30%;
-    display: table 
+   .board{
+    grid-template-columns: repeat(3, 88px);
+    grid-template-rows: repeat(3, 80px);
+  
   }
-  main {
+
+   button {
+    font-size: 15px;
+  }
+
+  .cell {
+    border-radius: 3px;
+    font-size: 1rem; 
+  }
+
+  footer {
+    font-size: 15px;   
+  }
+
+  .title {
+    display: none;
+   /* transform: translateY(80%); */
+  }
+
+  .title-mobile {
+    display: block;
     font-size: 1.5rem;
-  }  
+    padding: 15px;
+    color: rgb(60, 62, 63); 
+  }
+
+  
+  .topo{
+    flex-direction: column;
+  } 
+
+  .players {
+    height: 60px;
+    width: 95px;
+    padding: 9px;
+  }
+
+  .topo .players{
+    margin: 9px;
+  }
+
+  .nextPlayer{
+    text-align: center; 
+    height: 23px;
+    width: 40%;
+   /* transform: translateY(-150%); */
+  }
+  
 } 
 
 @media only screen and (max-width: 767px) and (orientation:landscape) {
+  .board {
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+  }
+
+  footer {
+    font-size: 10px;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  
+  }
+
+  button {
+    font-size: 10px;  
+    padding: 0.5rem 0.5rem; 
+  }
+
+  .title {
+    font-size: 0.9rem;
+  
+  }
+  
+  .players{
+    height: 30px;
+    width: 50px; 
+    align-items: center; 
+    font-size: 0.5rem;
+  }
+
+  .nextPlayer{
+    text-align: center; 
+    height: 14px;
+    width: 60px; 
+    font-size: 0.5rem;
+    
+  }
+
+  .cell {
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
   body {
     width: 100%;
     text-align: justify;
-    padding: 15%;
-    display: table
-   
   }
 
-  main {
-    font-size: 1.5rem;
-  } 
-}
+} 
 
