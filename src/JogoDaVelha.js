@@ -94,12 +94,12 @@ function JogoDaVelha() {
 
         </div>
         <h1 className="title"> Jogo da Velha</h1>
-        <h1 className="title2"> Jogo da Velha</h1>
-        
-
+    
         <div className="nextPlayer">
         {`Next Player: ${currentPlayer}`}
         </div>
+
+        <h1 className="title-mobile"> Jogo da Velha</h1>
 
       </div>
     

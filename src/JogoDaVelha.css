@@ -16,8 +16,9 @@ body {
   justify-content: center;
 
   font-family: grenze;
-  height: 100vh;
   background-color: rgb(153, 153, 153);
+  padding-top: 25px;
+  height:60%;
 }
 
 .nextPlayer{
@@ -60,7 +61,7 @@ body {
   margin-bottom: 0;
 } 
 
-.title2 {
+.title-mobile {
   display: none;
 } 
 
@@ -69,7 +70,6 @@ body {
   grid-template-columns: repeat(3, 178px);
   grid-template-rows: repeat(3, 130px);
   gap: 1rem;
-  cursor: pointer;
 }
 
 .board.game-over{
@@ -87,6 +87,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #00000066;
+  cursor: pointer;
 }
 
 .cell:not(.O):not(.X):hover {
@@ -139,40 +140,34 @@ button {
 
 
 @media only screen and (max-width: 767px) and (orientation:portrait) {
-  body {
-    width: 100%; 
-    text-align: justify;
-  }
-
    .board{
     grid-template-columns: repeat(3, 88px);
     grid-template-rows: repeat(3, 80px);
+  
   }
 
    button {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .cell {
     border-radius: 3px;
-    font-size: 1rem;
+    font-size: 1rem; 
   }
 
   footer {
-    font-size: 13px;   
+    font-size: 15px;   
   }
 
   .title {
-    font-size: 1.5rem;
     display: none;
-    padding: 0.6em;
    /* transform: translateY(80%); */
   }
 
-  .title2 {
-    display: flex;
+  .title-mobile {
+    display: block;
     font-size: 1.5rem;
-    padding: 0.6em;
+    padding: 15px;
     color: rgb(60, 62, 63); 
   }
 
@@ -182,33 +177,32 @@ button {
   } 
 
   .players {
-    height: 65px;
-    width: 95px; 
-    align-items: center; 
+    height: 60px;
+    width: 95px;
+    padding: 9px;
+  }
+
+  .topo .players{
+    margin: 9px;
   }
 
   .nextPlayer{
     text-align: center; 
-    height: 22px;
-    width: 118px; 
+    height: 23px;
+    width: 40%;
    /* transform: translateY(-150%); */
   }
   
 } 
 
 @media only screen and (max-width: 767px) and (orientation:landscape) {
-  body {
-    width: 100%;
-    text-align: justify;
-  }
-
   .board {
     grid-template-columns: repeat(3, 60px);
     grid-template-rows: repeat(3, 60px);
   }
 
   footer {
-    font-size: 0.5rem;
+    font-size: 10px;
     display: flex; 
     flex-direction: row;
     align-items: center;
@@ -217,11 +211,12 @@ button {
   }
 
   button {
-    font-size: 0.5rem;
+    font-size: 10px;  
+    padding: 0.5rem 0.5rem; 
   }
 
   .title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   
   }
   
