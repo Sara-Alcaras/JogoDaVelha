@@ -1,4 +1,4 @@
-# CasaCriativa
+# Jogo da Velha
 O jogo da velha é um jogo que o usuário joga contra si próprio e foi criado com base em um vídeo aula do Lucas Caton e 
 tem como objetivo treinar o uso em React, CSS e Js.
 
